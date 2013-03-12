@@ -1,0 +1,5 @@
+IN=$1
+OUT=$2
+# This file is to annotate gene-name and description for diff_gene.txt generated using cuffdiff program for RNA-Seq analysis.
+
+perl /home/nsheth/Util/general/paste.pl $IN 0 /data/refdb/genomes/Homo_sapiens/annotations/gene_info_hg_with_refseq.txt 15 2 4 8 > $OUT
