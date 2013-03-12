@@ -3,7 +3,6 @@ input_file=$1
 output_file=$2
 
 
-
 # Directory to store individual sequences
 fasta_dir=$(basename ${input_file%.*})_sequences
 
@@ -25,4 +24,6 @@ for f in $fasta_files; do
 done;
 
 # run perl script to combine all the etandem output files.
-perl 1-filter_etandem.pl $fasta_dir $output_file
+perl ~/bin/1-filter_etandem.pl $fasta_dir $output_file
+
+
