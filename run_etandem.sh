@@ -20,7 +20,6 @@ fasta_files=$fasta_dir/*
 
 for f in $fasta_files; do
   etandem -sequence $f -minrepeat 6 -maxrepeat 50 -outfile $f.etandem
-  rm $f
 done;
 
 # run perl script to combine all the etandem output files.
