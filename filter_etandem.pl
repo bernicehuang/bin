@@ -16,7 +16,7 @@ if (!defined($outfile)) {
 # Open and read each one of the etandem files that were just created
 
 
-my ($line, $readid);
+my ($line, $readid, $hitcount);
 
 
 open INFILE, "$etandem" or die "error in opening $etandem\n";

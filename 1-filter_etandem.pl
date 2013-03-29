@@ -26,7 +26,7 @@ foreach $etandemfile (@etandemarray) {
 	print "File = $etandemfile\n";
 	
   # run script to see if there were any repeats detected in the sequence
-  $command = "perl filter_etandem.pl $etandemfile $outfile";
+  $command = "perl ~/bin/filter_etandem.pl $etandemfile $outfile";
     `$command`;
     
 }
