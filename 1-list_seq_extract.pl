@@ -27,7 +27,7 @@ while($line = <INFILE>) {
 	chomp $line;
 	
 	# ^>.*(chromosome\s\d{1,2})
-	if ($line =~/^>(.*)/) {
+	if ($line =~/^>(.*)\s/) {
 	# if ($line =~/^>(.*)/) {
 		
 		if($seq ne "") {

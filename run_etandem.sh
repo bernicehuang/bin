@@ -19,7 +19,7 @@ awk '/^>/ {close(OUT); ++c; OUT="'$fasta_dir'/" substr($0,2) ".fasta";
 fasta_files=$fasta_dir/*
 
 for f in $fasta_files; do
-  etandem -sequence $f -minrepeat 6 -maxrepeat 50 -outfile $f.etandem
+  etandem -sequence $f -minrepeat 6 -maxrepeat 1000 -outfile $f.etandem
 done;
 
 # run perl script to combine all the etandem output files.
